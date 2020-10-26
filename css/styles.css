@@ -2,6 +2,7 @@
     font-family: "Bradley Hand", cursive;
 
 }
+
 .body {
     background-color: white;
     -webkit-box-sizing: content-box;
@@ -17,6 +18,9 @@
 .important {
     font-weight: bold;
     color: #A40E11;
+    font-size: 16px;
+    /*background-color: red;*/
+    /*border-radius: 3px;*/
 }
 
 .todo_list {
@@ -31,7 +35,7 @@
 
 }
 
-h1 {
+.title-todo {
     text-align: center;
     margin-top: 0;
     margin-bottom: 20px;
@@ -52,7 +56,7 @@ input[type=text] {
     border: 1px solid #86a8e7;
 }
 
-button {
+.add, .add:active {
     margin-top: 10px;
     width: 40%;
     padding: 10px;
@@ -63,18 +67,53 @@ button {
     border: 1px solid #86a8e7;
 }
 
+.add:active {
+    background-color: aquamarine;
+}
+
+.todo-help, .todo-help:active {
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 10px 0 #074b83;
+    background-color: #86a8e7;
+    border: 1px solid #86a8e7;
+}
+
+.todo-help:active {
+    background-color: aquamarine;
+}
+
 .todo {
     padding-left: 0;
 }
 
 .todo li {
-    padding: 1em;
+    padding: 20px;
     list-style-type: none;
+    background-color: dodgerblue;
+    /*opacity: 0.5;*/
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 5px 10px 2px dodgerblue;
 }
 
-.todo li:not(:last-child) {
-    border-bottom: 1px solid #000;
-}
+/*.todo li:active {*/
+/*    padding: 20px;*/
+/*    list-style-type: none;*/
+/*    background-color: lightseagreen;*/
+/*    border-radius: 10px;*/
+/*    margin-top: 10px;*/
+/*    box-shadow: 2px 5px 10px 2px lightseagreen;*/
+/*}*/
+
+/*li:focus {*/
+/*    background-color: green;*/
+/*}*/
+
+/*.todo li:not(:last-child) {*/
+/*    border-bottom: 1px solid olivedrab;*/
+/*}*/
 
 input[type=checkbox] {
     opacity: 0;
@@ -82,13 +121,13 @@ input[type=checkbox] {
 }
 
 input[type=checkbox], label {
-    display: inline-block;
-    vertical-align: middle;
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
     margin: 5px;
     cursor: pointer;
 }
 
-input[type=checkbox] + label:before {
+input[type=checkbox], label:before {
     content: '';
     background: #1BA39C;
     border-radius: 5px;
@@ -100,6 +139,7 @@ input[type=checkbox] + label:before {
     padding: 2px;
     margin-right: 10px;
     text-align: center;
+
 }
 
 input[type=checkbox]:checked + label:before {
