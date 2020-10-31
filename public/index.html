@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Заметки</title>
+    <title>TODO-List</title>
 </head>
 <body class="body">
 <div class="container">
-
     <div class="todo_list">
+        <button class="todo-help" id="help-button">?</button>
         <h1 class="title-todo">Мои заметки :</h1>
         <div class="create_new_todo">
             <input type="text" class="message" placeholder="Описание">
             <button class="add">Добавить</button>
-            <button class="todo-help">?</button>
         </div>
-
         <div class="wrapper">
             <ul class="todo"></ul>
         </div>
-
     </div>
-
 </div>
-
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h3 class="modal-title">Помощь</h3>
+            <button class="close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <ul class="actions-row">
+                <li>"Описание" - поле для записи заметок;</li>
+                <li>"Добавить" - кнопка для сохранения заметок;</li>
+                <li>"MOUSE-2" - Выделить важную заметку;</li>
+                <li>"CTRL" + "MOUSE-2" - При нажатии на заметку, удаляет её.</li>
+            </ul>
+        </div>
+    </div>
+</div>
 <script src="../src/index.js"></script>
 </body>
 </html>

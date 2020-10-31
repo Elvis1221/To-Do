@@ -27,7 +27,7 @@ addButton.addEventListener('click', function () {
 function displayMessages() {
     let displayMessage = '';
 
-    if (todoList === 0 ) todo.innerHTML = '';
+    if (todoList === 0) todo.innerHTML = '';
 
     todoList.forEach(function (item, i) {
         displayMessage += `
@@ -66,5 +66,17 @@ todo.addEventListener('contextmenu', function (event) {
             localStorage.setItem('todo', JSON.stringify(todoList))
         }
     })
+});
+
+const helpButton = document.querySelector('#help-button');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.close');
+
+helpButton.addEventListener('click', function (event) {
+    modal.classList.add('is-open');
+});
+
+close.addEventListener('click', function (event) {
+    modal.classList.remove('is-open');
 });
 
