@@ -4,6 +4,7 @@
 
 .body {
     background-image: url("../img/desctop.jpg");
+    background-repeat: repeat-y;
     box-sizing: content-box;
     position: relative;
 }
@@ -185,4 +186,83 @@ input[type=checkbox]:checked + label:before {
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+@media (max-width: 1366px) {
+    .body {
+        background-size: 1366px;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    .body {
+        background-size: 1024px;
+    }
+
+    .todo_list {
+        max-width: 60%;
+    }
+
+    .add {
+        font-size: 25px;
+    }
+
+    input {
+        font-size: 25px;
+    }
+
+    .todo li {
+        font-size: 25px;
+
+    }
+}
+
+@media (max-width: 992px) {
+    .body {
+        background-size: 992px;
+    }
+    .todo_list {
+        max-width: 60%;
+    }
+
+    .add {
+        font-size: 25px;
+    }
+
+    input {
+        font-size: 25px;
+    }
+
+    .todo li {
+        font-size: 25px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        background-size: 768px;
+    }
+}
+
+@media (max-width: 578px) {
+    .body {
+        background-size: 578px;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        background-size: 480px;
+    }
+
+    .todo_list {
+        max-width: 90%;
+    }
+
+    .todo-help {
+        max-width: 10%;
+    }
 }
