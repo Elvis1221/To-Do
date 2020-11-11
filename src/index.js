@@ -78,7 +78,7 @@ todo.addEventListener('contextmenu', function (event) {
 
 const helpButton = document.querySelector('#help-button');
 const modal = document.querySelector('.modal');
-const close = document.querySelector('.close')
+const close = document.querySelector('.close');
 
 helpButton.addEventListener('click', function (event) {
     modal.classList.add('is-open');
